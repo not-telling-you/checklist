@@ -34,13 +34,15 @@ function App() {
       <div className="max-w-2xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-3xl font-bold text-gray-800">CHECK List</h1>
-          <button
-            onClick={addItem}
-            className="p-2 text-blue-600 hover:text-blue-800 transition-colors"
-            aria-label="Add new item"
-          >
-            <PlusCircle size={24} />
-          </button>
+          {
+          // <button
+          //   onClick={addItem}
+          //   className="p-2 text-blue-600 hover:text-blue-800 transition-colors"
+          //   aria-label="Add new item"
+          // >
+          //   <PlusCircle size={24} />
+          // </button>
+          }
         </div>
 
         <div className="space-y-3">
@@ -58,7 +60,22 @@ function App() {
               <textarea
                 value={item.text}
                 onChange={(e) => updateItem(item.id, { text: e.target.value })}
-                placeholder="Enter your task..."
+                placeholder={items.indexOf(item) === 0
+                  ? "Enter your thing here..."
+                  : items.indexOf(item) === 1
+                    ? "Enter more thing here..."
+                    : items.indexOf(item) === 2
+                      ? "Wow, you're getting a few..."
+                      : items.indexOf(item) === 3
+                        ? "Slow down... perhaps!?"
+                        : items.indexOf(item) === 4
+                          ? "Holy cow!!! You're serious!"
+                          : items.indexOf(item) === 5
+                            ? "I'm watching, you know?"
+                            : items.indexOf(item) === 6
+                              ? "I can't watch anymore 😭"
+                              : "@$&^**+!😵‍💫"
+                }
                 rows={1}
                 className="flex-1 resize-none overflow-hidden bg-transparent p-0 focus:ring-0 focus:outline-none"
                 style={{
@@ -81,6 +98,13 @@ function App() {
             </div>
           ))}
         </div>
+        <button
+          onClick={addItem}
+          className="p-2 text-blue-600 hover:text-blue-800 transition-colors"
+          aria-label="Add new item"
+        >
+          <PlusCircle size={24} />
+        </button>
       </div>
     </div>
   );
