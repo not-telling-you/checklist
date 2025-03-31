@@ -16,5 +16,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      window.addEventListener("beforeunload", function (event) {
+          event.preventDefault(); // Some browsers require this
+      });
+      // OR
+      window.onbeforeunload= (event) => {
+          event.preventDefault(); // Some browsers require this
+      }
+    </script>
   </body>
 </html>
