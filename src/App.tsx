@@ -7,7 +7,7 @@ interface CheckListItem {
   checked: boolean;
 }
 
-function App() {
+export default function App() {
   const [items, setItems] = useState<CheckListItem[]>([]);
 
   const addItem = () => {
@@ -109,5 +109,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

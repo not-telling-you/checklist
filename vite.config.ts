@@ -3,10 +3,6 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  build: {
-    outDir: 'build', // Replace 'custom-output-dir' with your desired directory
-    // sourcemap: true, // Optional: Include source maps if needed
-  },
   plugins: [
     react(),
     VitePWA({
