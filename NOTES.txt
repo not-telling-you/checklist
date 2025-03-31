@@ -1,0 +1,26 @@
+8. Configure GitHub Pages
+Navigate to the GitHub Pages settings page
+In your web browser, navigate to the GitHub repository
+Above the code browser, click on the tab labeled "Settings"
+In the sidebar, in the "Code and automation" section, click on "Pages"
+Configure the "Build and deployment" settings like this:
+Source: Deploy from a branch
+Branch:
+Branch: gh-pages
+Folder: / (root)
+Click on the "Save" button
+That's it! The React app has been deployed to GitHub Pages! 🚀
+
+At this point, the React app is accessible to anyone who visits the homepage URL you specified in Step 4. For example, the React app I deployed is accessible at https://gitname.github.io/react-gh-pages.
+
+9. (Optional) Store the React app's source code on GitHub
+In a previous step, the gh-pages npm package pushed the distributable version of the React app to a branch named gh-pages in the GitHub repository. However, the source code of the React app is not yet stored on GitHub.
+
+In this step, I'll show you how you can store the source code of the React app on GitHub.
+
+Commit the changes you made while you were following this tutorial, to the master branch of the local Git repository; then, push that branch up to the master branch of the GitHub repository.
+
+$ git add .
+$ git commit -m "Configure React app for deployment to GitHub Pages"
+$ git push origin master
+I recommend exploring the GitHub repository at this point. It will have two branches: master and gh-pages. The master branch will contain the React app's source code, while the gh-pages branch will contain the distributable version of the React app.
