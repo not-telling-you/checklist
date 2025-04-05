@@ -3,9 +3,9 @@ const CACHE_EXPIRATION = 24 * 60 * 60 * 1000; // 1 day in milliseconds
 
 const urlsToCache = [
   '/',
-  'sw.js',
+  'sw2.js',
   '/checklist2/',
-  '/checklist2/sw.js',
+  '/checklist2/sw2.js',
   '/checklist2/static/js/bundle.js',
   '/checklist2/manifest.json',
   '/checklist2/static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js',
