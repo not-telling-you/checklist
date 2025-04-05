@@ -4,12 +4,12 @@ const CACHE_EXPIRATION = 24 * 60 * 60 * 1000; // 1 day in milliseconds
 const urlsToCache = [
   '/',
   'sw.js',
-  '/checklist/',
-  '/checklist/sw.js',
-  '/checklist/static/js/bundle.js',
-  '/checklist/manifest.json',
-  '/checklist/static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js',
-  '/checklist/favicon.ico'
+  '/checklist2/',
+  '/checklist2/sw.js',
+  '/checklist2/static/js/bundle.js',
+  '/checklist2/manifest.json',
+  '/checklist2/static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js',
+  '/checklist2/favicon.ico'
 ];
 
 // initial asset cache
